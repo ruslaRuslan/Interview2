@@ -82,6 +82,9 @@ showAgeDifferences(laptop);
 
 // T7*. Yeni bir laptop3 obyekti yarat Spread (...) operatoru ile. Sahib melumatlarini deyis. (sahib: ali, isiyev, 1995)
 
+let laptop3 = { ...laptop.sahib, ad: "Ali", soyad: "isiyev", dogumIl: 1995 };
+console.log(laptop3);
+
 // ------------------------------------------------------------------------------------------------------------------
 
 // T8. isEqual(laptop, laptop3) -> bu funksiya 2 obyekt alir, onlar beraberdirse, console-a "Bunlar eyni obyektlerdir " , eks halda "Bunlar ferqli obyektlerdir"
