@@ -28,8 +28,22 @@ console.log("laptop2:", laptop2);
 // T2. Bir Arrow  funksiya yarat. Ona laptop obyektini verim. O console-a bele bir mesaj cixartsin:
 // showInfo(laptop)
 // -> HP markali laptop, 2018-ci ilde china-da istehsal olunub.
+
+const showInfo = (info) => {
+  console.log(
+    `${laptop.model} markali laptop, ${laptop.il}-ci ilde ${laptop.olke}-da istehsal olunub. `
+  );
+};
+showInfo(laptop);
 // ------------------------------------------------------------------------------------------------------------------
 // T3. showAge(laptop) // Verilen laptopun 6 yasi var.
+
+const showAge = () => {
+  let date = new Date();
+  let newDate = date.getFullYear();
+  console.log(`Verilen laptopun ${newDate - laptop.il} yasi var.`);
+};
+showAge(laptop);
 // ------------------------------------------------------------------------------------------------------------------
 
 // T4. laptop obyektine yeni bir property-e elave et. sahib: {ad:'Ruslan', soyad:'Zeynalov', dogumIl:2000}
