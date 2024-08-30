@@ -88,11 +88,26 @@ console.log(laptop3);
 // ------------------------------------------------------------------------------------------------------------------
 
 // T8. isEqual(laptop, laptop3) -> bu funksiya 2 obyekt alir, onlar beraberdirse, console-a "Bunlar eyni obyektlerdir " , eks halda "Bunlar ferqli obyektlerdir"
+const isEqual = (laptop, laptop3) => {
+  if (JSON.stringify(laptop) === JSON.stringify(laptop3)) {
+    console.log("Bunlar eyni obyektlerdir ");
+  } else {
+    console.log("Bunlar ferqli obyektlerdir");
+  }
+};
+isEqual();
 
 // ------------------------------------------------------------------------------------------------------------------
 
 // T9. isSameName(laptop, laptop2) -> bu funksiya 2 obyekt alir, obyektlerin modelleri eynidirse "Bunlar eyni modeldirler", eks halda "bunlar ferqli modeldirler" mesajini console-a cixarsin.
-
+const isSameName = () => {
+  if (laptop.model === laptop2.model) {
+    console.log("Bunlar eyni modeldirler");
+  } else {
+    console.log("bunlar ferqli modeldirler");
+  }
+};
+isSameName(laptop, laptop2);
 // ------------------------------------------------------------------------------------------------------------------
 
 // T10. isSameOwner(laptop, laptop3)-> bu funksiya 2 obyekt alir, obyektlerin sahiblerinin adlari eynidirse "Bunlar eyni adama mexsusdur", eks halda "bunlar ferqli adamlara mexsusdur" mesajini console-a cixarsin.
