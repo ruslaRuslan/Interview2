@@ -47,6 +47,14 @@ showAge(laptop);
 // ------------------------------------------------------------------------------------------------------------------
 
 // T4. laptop obyektine yeni bir property-e elave et. sahib: {ad:'Ruslan', soyad:'Zeynalov', dogumIl:2000}
+
+laptop.sahib = {
+  ad: "Ruslan",
+  soyad: "Zeynalov",
+  dogumIl: 2000,
+};
+console.log(laptop);
+
 // ------------------------------------------------------------------------------------------------------------------
 
 // T5. showOwner(laptop) // HP markali laptopun sahibi Zeynalov Ruslandir. O 2000-ci ilde dogulub.
