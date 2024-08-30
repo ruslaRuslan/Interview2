@@ -67,7 +67,17 @@ const showOwner = () => {
 showOwner();
 // ------------------------------------------------------------------------------------------------------------------
 
-// T6. showAgeDifferences(laptop) // sahibinin dogum ili ile laptopun il ferqi. (sahib 2000, zapi 2018) -> 18 il.
+// T6. showAgeDifferences(laptop) // sahibinin dogum ili ile laptopun il ferqi. (sahib 2000, Hp 2018) -> 18 il.
+
+const showAgeDifferences = (info) => {
+  console.log(
+    ` sahibinin dogum ili ile laptopun il ferqi. (sahib ${
+      laptop.sahib.dogumIl
+    }, ${laptop.model} ${laptop.il}) -> ${laptop.il - laptop.sahib.dogumIl} il.`
+  );
+};
+showAgeDifferences(laptop);
+
 // ------------------------------------------------------------------------------------------------------------------
 
 // T7*. Yeni bir laptop3 obyekti yarat Spread (...) operatoru ile. Sahib melumatlarini deyis. (sahib: ali, isiyev, 1995)
