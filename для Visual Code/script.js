@@ -108,6 +108,15 @@ const isSameName = () => {
   }
 };
 isSameName(laptop, laptop2);
+
 // ------------------------------------------------------------------------------------------------------------------
 
 // T10. isSameOwner(laptop, laptop3)-> bu funksiya 2 obyekt alir, obyektlerin sahiblerinin adlari eynidirse "Bunlar eyni adama mexsusdur", eks halda "bunlar ferqli adamlara mexsusdur" mesajini console-a cixarsin.
+const isSameOwner = () => {
+  if (laptop.ad === laptop3.ad) {
+    console.log("Bunlar eyni adama mexsusdur");
+  } else {
+    console.log("bunlar ferqli adamlara mexsusdur");
+  }
+};
+isSameOwner(laptop, laptop3);
