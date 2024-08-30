@@ -58,6 +58,13 @@ console.log(laptop);
 // ------------------------------------------------------------------------------------------------------------------
 
 // T5. showOwner(laptop) // HP markali laptopun sahibi Zeynalov Ruslandir. O 2000-ci ilde dogulub.
+
+const showOwner = () => {
+  console.log(
+    `${laptop.model} markali laptopun sahibi ${laptop.sahib.soyad} ${laptop.sahib.ad}-dir`
+  );
+};
+showOwner();
 // ------------------------------------------------------------------------------------------------------------------
 
 // T6. showAgeDifferences(laptop) // sahibinin dogum ili ile laptopun il ferqi. (sahib 2000, zapi 2018) -> 18 il.
