@@ -166,3 +166,10 @@
 
 // let result2 = array2.every((element) => element.includes("R"));
 // console.log(result2);
+// _______________________________________________________________________________________________________________________________________
+
+function add4(word) {
+  let result = word.charAt(0).toUpperCase() + word.slice(1);
+  console.log(result);
+}
+add4("ruslan");
