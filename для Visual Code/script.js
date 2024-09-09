@@ -168,8 +168,23 @@
 // console.log(result2);
 // _______________________________________________________________________________________________________________________________________
 
-function add4(word) {
-  let result = word.charAt(0).toUpperCase() + word.slice(1);
-  console.log(result);
+// function add4(word) {
+//   let result = word.charAt(0).toUpperCase() + word.slice(1);
+//   console.log(result);
+// }
+// add4("ruslan");
+// _______________________________________________________________________________________________________________________________________
+
+function Balance() {
+  let balance = 0;
+  return function (sum) {
+    balance += sum;
+    console.log(balance);
+  };
 }
-add4("ruslan");
+const changeBalance = Balance();
+changeBalance(3);
+changeBalance(3);
+changeBalance(3);
+changeBalance(-2);
+// clousure
