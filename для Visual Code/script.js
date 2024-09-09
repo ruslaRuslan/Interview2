@@ -138,13 +138,22 @@
 // console.log(add3(1, 2));
 // _______________________________________________________________________________________________________________________________________
 
-let user = prompt("palindrom olup olmaduguni yoxla");
-function isPalindrome(string) {
-  let reversed = string.split("").reverse().join("");
-  return reversed === user;
-}
-if (isPalindrome(user)) {
-  console.log(`"${user}" palindromdu`);
-} else {
-  console.log(`"${user}" palindrom deyil`);
-}
+// let user = prompt("palindrom olup olmaduguni yoxla");
+// function isPalindrome(string) {
+//   let reversed = string.split("").reverse().join("");
+//   return reversed === user;
+// }
+// if (isPalindrome(user)) {
+//   console.log(`"${user}" palindromdu`);
+// } else {
+//   console.log(`"${user}" palindrom deyil`);
+// }
+// _______________________________________________________________________________________________________________________________________
+
+setTimeout(() => {
+  console.log("10 saniyə sonra salam!");
+}, 10000);
+
+setInterval(() => {
+  console.log("Hər 10 saniyədə bir salam!");
+}, 10000);
