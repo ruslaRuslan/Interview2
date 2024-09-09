@@ -150,10 +150,19 @@
 // }
 // _______________________________________________________________________________________________________________________________________
 
-setTimeout(() => {
-  console.log("10 saniyə sonra salam!");
-}, 10000);
+// setTimeout(() => {
+//   console.log("10 saniyə sonra salam!");
+// }, 10000);
 
-setInterval(() => {
-  console.log("Hər 10 saniyədə bir salam!");
-}, 10000);
+// setInterval(() => {
+//   console.log("Hər 10 saniyədə bir salam!");
+// }, 10000);
+// _______________________________________________________________________________________________________________________________________
+// let array = [1, 2, 3, 4, 5];
+// let array2 = ["Sada", "Mamed", "Nazim", "Elcan", "Sahib", "Ruslan"];
+
+// // let result = array.reduce((a, b) => a + b);
+// // console.log(result);
+
+// let result2 = array2.every((element) => element.includes("R"));
+// console.log(result2);
