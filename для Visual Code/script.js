@@ -122,17 +122,29 @@
 // isSameOwner(laptop, laptop3);
 // _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
-add(5, 5);
-function add(a, b) {
-  let result = a + b;
-  console.log(result);
+// add(5, 5);
+// function add(a, b) {
+//   let result = a + b;
+//   console.log(result);
+// }
+
+// const add2 = function (a, b) {
+//   let result = a + b;
+//   console.log(result);
+// };
+// add2(2, 3);
+
+// const add3 = (a, b) => a + b;
+// console.log(add3(1, 2));
+// _______________________________________________________________________________________________________________________________________
+
+let user = prompt("palindrom olup olmaduguni yoxla");
+function isPalindrome(string) {
+  let reversed = string.split("").reverse().join("");
+  return reversed === user;
 }
-
-const add2 = function (a, b) {
-  let result = a + b;
-  console.log(result);
-};
-add2(2, 3);
-
-const add3 = (a, b) => a + b;
-console.log(add3(1, 2));
+if (isPalindrome(user)) {
+  console.log(`"${user}" palindromdu`);
+} else {
+  console.log(`"${user}" palindrom deyil`);
+}
